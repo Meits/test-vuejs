@@ -16,10 +16,20 @@ const getters =  {
       return state.count;
     }
 }
+const actions = {
+    increment(context) {
+        context.commit('increment');
+    },
+    decrement(context) {
+        context.commit('decrement');
+    }
+}
+
 
 export default {
   namespaced: false,
   state,
   getters,
+  actions,
   mutations
 }
