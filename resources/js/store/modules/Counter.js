@@ -15,11 +15,11 @@ const getters =  {
     count: state => {
       return state.count;
     }
-  }
+}
 
 export default {
   namespaced: false,
   state,
-    getters,
+  getters,
   mutations
 }
