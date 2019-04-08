@@ -1,5 +1,10 @@
 <template>
-    <counter></counter>
+    <div>
+        <router-link :to="{ name: 'home' }">Home</router-link>
+        <router-link :to="{ name: 'products' }">Products</router-link>
+        <router-view></router-view>
+    </div>
+
 </template>
 
 <script>
