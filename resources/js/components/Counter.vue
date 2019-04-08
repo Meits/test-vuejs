@@ -7,22 +7,23 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex';
     export default {
         mounted() {
             console.log('Component Counter mounted.')
         },
         computed: {
-            count() {
-            console.log(this.$store)
-              return this.$store.state.Counter.count;
-            }
-        },
+            ...mapState({
+               count: state => state.Counter.count
+            }),
+        }
+        ,
         methods : {
             add : function () {
-                this.$store.commit('increment');
+                this.$store.dispatch('increment');
             },
             sub : function () {
-                this.$store.commit('decrement');
+                this.$store.dispatch('decrement');
             },
         }
         
