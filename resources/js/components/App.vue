@@ -16,7 +16,7 @@
 <script>
 
     import Counter from './Counter.vue'
-    import Navigation from './Navigation.vue';
+    import Navigation from './parts/Navigation.vue';
     
     export default {
         mounted() {

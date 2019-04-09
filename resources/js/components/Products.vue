@@ -83,7 +83,7 @@
 </template>
 
 <script>
-  import Card from './Card.vue';
+  import Card from './helpers/Card.vue';
 export default {
     components : {
         'material-card' : Card
