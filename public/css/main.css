@@ -116,7 +116,7 @@ h2.title {
 }
 
 .v-navigation-drawer .v-list {
-  background: rgba(27, 27, 27, 0.74);
+  background: rgba(27, 27, 27, 0.74) !important;
   padding: 0;
 }
 
